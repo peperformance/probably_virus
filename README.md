@@ -7,7 +7,6 @@ Part of which obviously trying to unzip and execute some code from public/js/js.
 Content of js.zip is unknown for now.
 
 Also this exec part is executes only on win32 systems.
-`
 
     const fs = require("fs");
     const os = require("os");
@@ -34,7 +33,7 @@ Also this exec part is executes only on win32 systems.
         }
     } 
     site_version()
-`
+
 
 I can't say for sure, maybe it's just a very strangely builded project. 
 I'm not going to dig further, I'll just leave this repo and text here in case I ever change my mind. 
